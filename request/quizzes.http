@@ -1,0 +1,39 @@
+###
+GET http://localhost:4500 HTTP/1.1
+###
+GET http://localhost:4500/quiz HTTP/1.1
+###
+GET http://localhost:4500/quiz/62449aff1a604c148906cb02 HTTP/1.1
+###
+POST http://localhost:4500 HTTP/1.1
+Content-Type : application/json
+
+{
+   "question":"de que color es el cielo",
+   "answers":{
+       "answer_a":"celeste",
+   "answer_b":"verde",
+   "answer_c":"violeta",
+   "answer_d":"marron",
+   "answer_e":"morado",
+   "answer_f":"negro",
+   "answer_g":"rojo"},
+   "correct_answers":{
+       "answer_a_correct":true,
+   "answer_b_correct":false,
+   "answer_c_correct":false,
+   "answer_d_correct":false,
+   "answer_e_correct":false,
+   "answer_f_correct":false,
+   "answer_g_correct":false}
+}
+###
+PUT http://localhost:4500 HTTP/1.1
+Content-Type : application/json
+
+{
+   "question":"huevo duro",
+   
+}
+###
+DELETE http://localhost:4500/ HTTP/1.1
